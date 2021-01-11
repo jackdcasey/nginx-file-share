@@ -1,0 +1,10 @@
+web:
+  image: nginx
+  volumes:
+    - ./public:/public
+    - ./nginx.conf:/etc/nginx/nginx.conf
+    - ./private/htpasswd:/etc/nginx/htpasswd
+    - ./certs/key.pem:/etc/nginx/certs/key.pem
+    - ./certs/cert.pem:/etc/nginx/certs/cert.pem
+  ports:
+    - "4433:443"
