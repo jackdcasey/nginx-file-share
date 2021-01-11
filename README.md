@@ -15,7 +15,7 @@ Clone this repository, create the following directories:
 
 ## Create or Add Certificates
 
-If you have certificates available, please place them in the certs directory, named:
+If you have certificates available, place them in the certs directory with names:
 - cert.pem
 - key.pem
 
@@ -37,7 +37,7 @@ Run this for each user you want to create
 
 ## Upload Files
 
-Upload any files you want to share to the ./public directory
+Upload any files you want to share to the `public` directory
 
 ## Start Server
 
@@ -49,13 +49,13 @@ docker-compose up -d
 
 ## Networking (optional)
 
-If running this behind NAT, you will need to forward port 4433 to the IP address of the server
+If running this behind NAT, you will need to forward port `4433` to the IP address of the server
 
 # Downloading
 
 ## Browser
 
-To see the files available, open https://<servername>:4433/
+To see the files available, open `https://servername:4433/` or `https://ip-address:4433/`
 
 If using self-signed certs, you may see a trust error
 
